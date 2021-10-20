@@ -1,0 +1,649 @@
+/* NOTE: ZOOM PAGE OUT TO 75% FOR IT TO MATCH THE ORIGINAL */
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+	font-family: "Libre Baskerville", serif;
+	color: #325050;
+}
+
+#container {
+	display: grid;
+	grid-template-rows: 6;
+	grid-template-columns: 3fr;
+	/* with six rows, 50px high */
+	/* default all cells/children on the left be 2/3 the screen width, and all on the left 1/3 */
+}
+
+/* This is the grid layout */
+
+#rowOne {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-column: 1 / 3;
+	background-image: url(http://www.csszengarden.com/214/gridlines.png),
+		url(http://www.csszengarden.com/214/noise.png),
+		url(http://www.csszengarden.com/214/contours.png),
+		url(http://www.csszengarden.com/214/huntington.jpg);
+	background-repeat: repeat, repeat, repeat, no-repeat;
+	background-size: auto, auto, auto, cover;
+	background-attachment: fixed, fixed, fixed, scroll;
+	background-position: 2% 7%, 0% 45%;
+}
+
+#rowTwo {
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	grid-column: 1 / 3;
+}
+
+#rowThree {
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	grid-column: 1 / 3;
+	background-image: url(http://www.csszengarden.com/214/gridlines.png),
+		url(http://www.csszengarden.com/214/noise.png),
+		url(http://www.csszengarden.com/214/contours.png),
+		url(http://www.csszengarden.com/214/bamboo.png);
+	background-repeat: repeat, repeat, repeat, no-repeat;
+	background-size: auto, auto, auto, cover;
+	background-attachment: fixed, fixed, fixed, fixed;
+	background-color: rgba(138, 188, 159, 0.5);
+	background-position: 0% 0%;
+}
+
+#rowFour {
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	grid-column: 1 / 3;
+}
+
+/* All styles for the footers */
+
+#oneFoot {
+	grid-column: 1 / 3;
+	color: lightgrey;
+	height: 20.5rem;
+	background-image: url(http://www.csszengarden.com/214/gridlines.png),
+		url(http://www.csszengarden.com/214/noise.png),
+		url(http://www.csszengarden.com/214/contours.png),
+		url(http://www.csszengarden.com/214/koi.jpg);
+	background-position: right;
+	background-size: auto, auto, auto, cover;
+	background-repeat: repeat, repeat, repeat, no-repeat;
+	background-attachment: fixed, fixed, fixed, scroll;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	opacity: 97%;
+}
+
+#oneFoot > h1 {
+	width: 75%;
+	font-size: 2.02rem;
+	line-height: 2;
+	font-style: italic;
+	color: rgba(255, 255, 255, 0.4);
+	font-family: "Libre Baskerville", sans-serif;
+	font-weight: lighter;
+}
+
+#oneFoot > h1 > a {
+	color: rgba(255, 255, 255, 0.7);
+	font-style: normal;
+}
+
+#twoFoot {
+	grid-column: 1 /3;
+	height: 10.5rem;
+	background: #134347;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+/* All styles for the title div */
+
+#container::before {
+	content: "";
+	background: url(images/beforeTitle.png);
+	background-size: cover;
+	height: 1rem;
+	width: 100%;
+}
+
+#title {
+	line-height: 1.3;
+	text-align: center;
+	grid-column: 1 / 3;
+	position: relative;
+	bottom: 2rem;
+	padding: 2rem 0rem;
+}
+
+#title > h1::before {
+	content: "";
+	background: url(images/download.svg);
+	display: inline-block;
+	position: relative;
+	top: 90px;
+	left: 24px;
+	width: 8rem;
+	height: 8rem;
+	margin: -70px 70px 30px 0;
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+#title > h1 {
+	font-weight: 100;
+	color: #fff;
+	font-family: "Julius Sans One", sans-serif;
+	font-size: 51px;
+	position: relative;
+	top: 15px;
+	padding: 0.5rem 0rem;
+}
+
+#title > h2 {
+	position: relative;
+	font-size: 1.5rem;
+	font-weight: bolder;
+	bottom: 25px;
+	left: 3%;
+	color: rgba(255, 255, 255, 0.6);
+}
+
+/* All styles for the subTitle div */
+
+#subTitle {
+	font-family: "Julius Sans One", sans-serif;
+	font-size: 1.26rem;
+	color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	grid-column: 3 / 3;
+	background-color: #2e5e6361;
+}
+
+#buttons {
+	height: 22%;
+	width: 82%;
+}
+
+#buttonOne {
+	all: unset;
+	cursor: pointer;
+	color: rgb(255 255 255 / 56%);
+	background-color: rgb(255 255 255 / 8%);
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	width: 75%;
+	font-family: "Julius Sans One", sans-serif;
+	font-weight: lighter;
+}
+
+#buttonTwo {
+	all: unset;
+	cursor: pointer;
+	color: rgb(255 255 255 / 56%);
+	background-color: rgb(255 255 255 / 8%);
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	width: 20%;
+	font-family: "Nanum Gothic Coding", monospace;
+	font-weight: bolder;
+	position: relative;
+	top: 1px;
+	right: 6px;
+}
+
+#buttonOne:hover,
+#buttonTwo:hover {
+	background-color: rgba(255, 255, 255, 0.445);
+	transition: 200ms linear;
+	color: #fff;
+}
+
+/* All styles paragraph sections */
+
+#intro,
+#mainDes,
+#conclusion {
+	padding: 4em 10% 4em 15%;
+}
+
+#intro > p,
+#mainDes > p,
+#conclusion > p {
+	font-size: 1rem;
+	line-height: 2;
+}
+
+#intro > h3,
+#mainDes > h3,
+#conclusion > h3 {
+	font-family: "Julius Sans One", sans-serif;
+	line-height: 0;
+	font-weight: 100;
+	font-size: 1.76rem;
+}
+
+/* All styles for the author section */
+
+#authors {
+	background-color: #e5ede8;
+	display: flex;
+	justify-content: center;
+}
+
+#authors > ul {
+	list-style-type: none;
+	margin-top: 10%;
+	margin-left: 0rem;
+	padding-left: 0px;
+	width: 60%;
+	position: relative;
+	right: 2rem;
+}
+
+.authorListItem {
+	padding: 2.3em 0px;
+	border-bottom: solid 1px #d9e3dc;
+	line-height: 0.9;
+}
+
+#lastListItem {
+	border-bottom: none;
+}
+
+.designName {
+	display: block;
+	color: #607476;
+	font-size: 1.2em;
+	font-family: "Julius Sans One", sans-serif;
+}
+
+.designerName {
+	color: #616857;
+	font-size: 0.97em;
+}
+
+#authors > ul > li > span {
+	font-style: italic;
+	color: lightgrey;
+	font-size: 1.05em;
+}
+
+/* Style for rowThree */
+/* All styles for the links */
+
+#links {
+	background-color: rgb(154 189 169 / 32%);
+	display: flex;
+}
+
+#links > ul {
+	list-style: none;
+	margin-left: 1.5rem;
+	margin-top: 25%;
+}
+
+.linksListItem {
+	color: #607476;
+	border-top: solid 1px #a0b9ad;
+	font-family: "Julius Sans One", sans-serif;
+	font-size: 1.2em;
+	width: 95%;
+	padding: 2rem 0rem;
+}
+
+#lastLinkItem {
+	border-bottom: solid 1px #a0b9ad;
+}
+
+#conclusion {
+	background-color: whitesmoke;
+}
+
+#spaceHolder {
+	background-color: #e5ede8;
+}
+
+/* icon styles */
+
+#icons {
+	color: rgba(255, 255, 255, 0.5);
+	font-family: "verdemoderna";
+	display: flex;
+	justify-content: space-around;
+	padding: 10px;
+}
+
+#icons > div {
+	width: 60px;
+	height: 60px;
+	margin: 0px 3rem;
+	border: solid rgba(255, 255, 255, 0.5);
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#icons > div > a {
+	all: unset;
+	color: rgba(255, 255, 255, 0.5);
+	font-size: 2rem;
+}
+
+#icons > div:hover {
+	cursor: pointer;
+	background-color: rgba(255, 255, 255, 0.637);
+}
+
+#icons > div > a:hover {
+	cursor: pointer;
+}
+
+#authorsResponsive {
+	display: none;
+}
+
+#linksResponsive {
+	display: none;
+}
+
+/* All Media Querys */
+
+@media only screen and (max-width: 1060px) {
+	/* container could use some help so that it's children are full screen width */
+	.container {
+		grid-template-rows: 9;
+	}
+
+	#rowOne {
+		height: 95%;
+	}
+
+	/* Title styles for media query */
+
+	#title {
+		grid-column: 1 / 4;
+		padding: 3.5rem 0rem;
+	}
+
+	#title > h1::before {
+		display: inline-block;
+		position: relative;
+		top: 2rem;
+		width: 6.5rem;
+		height: 6.5rem;
+		margin: -45px 30px 0 10px;
+		background-repeat: no-repeat;
+		background-size: 80%;
+		opacity: 65%;
+	}
+
+	#title > h1 {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-size: 2.2rem;
+		position: relative;
+		top: 0;
+		right: 0;
+		left: 0;
+		bottom: 0;
+		padding: 0rem 0rem;
+	}
+
+	#title > h2 {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		position: relative;
+		left: 0;
+		right: 0;
+		font-size: 1.12rem;
+		max-width: 100vh;
+		padding-top: 0.1rem;
+		padding-left: 12rem;
+	}
+
+	/* Subtitle styles for the media query  */
+
+	#subTitle {
+		grid-column: 1 / 4;
+		grid-row: 2;
+		position: relative;
+		width: 100%;
+		height: 4.5rem;
+		bottom: 5.175rem;
+		margin-bottom: -7.9rem;
+		background-color: rgb(255 255 255 / 18%);
+	}
+
+	#buttons {
+		display: flex;
+		justify-content: flex-end;
+		height: 100%;
+		width: 95%;
+		background-color: none;
+	}
+
+	#buttonOne {
+		width: 90%;
+		background-color: unset;
+		font-size: 1.01rem;
+	}
+
+	#buttonTwo {
+		width: 8%;
+		background-color: unset;
+		right: 0px;
+		top: 0px;
+	}
+
+	/* Paragraph sections media query */
+
+	#intro,
+	#mainDes,
+	#conclusion {
+		padding: 2rem 10% 2rem 10%;
+	}
+
+	#intro > p,
+	#mainDes > p,
+	#conclusion > p {
+		font-size: 0.825rem;
+		line-height: 2;
+	}
+
+	#intro > h3,
+	#mainDes > h3,
+	#conclusion > h3 {
+		font-family: "Julius Sans One", sans-serif;
+		line-height: 0;
+		font-weight: 100;
+		font-size: 1.28rem;
+	}
+
+	#intro {
+		grid-column: 1 / 3;
+		padding-top: 1rem;
+	}
+
+	#mainDes {
+		grid-column: 1 / 3;
+	}
+
+	#conclusion {
+		grid-column: 1 / 3;
+	}
+
+	/* Hiding OG authors and links */
+
+	#authors {
+		display: none;
+	}
+
+	#links {
+		display: none;
+	}
+
+	/* Footers media query */
+
+	#oneFoot {
+		grid-column: 1 / 3;
+		height: 11.25rem;
+		opacity: 100%;
+	}
+
+	#oneFoot > h1 {
+		font-size: 1.42rem;
+		width: 78%;
+	}
+
+	#twoFoot {
+		grid-column: 1 /3;
+		height: 7.5rem;
+	}
+
+	/* icon media querys */
+
+	#icons > div {
+		width: 41.25px;
+		height: 41.25px;
+		margin: 0px 2.3rem;
+		border: solid rgba(255, 255, 255, 0.5);
+		border-radius: 50%;
+		border-width: medium;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	#icons > div > a {
+		all: unset;
+		color: rgba(255, 255, 255, 0.5);
+		font-size: 1.725rem;
+	}
+
+	/* Authors responsive styles */
+
+	#authorsResponsive {
+		grid-column: 1/3;
+		background-color: #edf4f0;
+		display: block;
+	}
+
+	#authorsResponsiveContainer {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		height: 100%;
+	}
+
+	#authorOne {
+		grid-column: 1 / span 1;
+	}
+
+	#authorTwo {
+		grid-column: 2 / span 1;
+	}
+
+	#authorsResponsive > ul {
+		list-style-type: none;
+		margin-left: 0px;
+		padding-left: 0px;
+	}
+
+	.authorListItem {
+		padding: 1em 20%;
+		line-height: 0.9;
+		margin-bottom: 20px;
+	}
+
+	#lastListItem1 {
+		border-bottom: none;
+	}
+
+	#lastListItem2 {
+		border-bottom: none;
+	}
+
+	.designName {
+		display: block;
+		color: #607476;
+		font-size: 0.975em;
+		font-family: "Julius Sans One", sans-serif;
+	}
+
+	.designerName {
+		color: #616857;
+		font-size: 0.75rem;
+	}
+
+	#authorsResponsive > ul > li > span {
+		font-style: italic;
+		color: rgb(173, 173, 173);
+		font-size: 0.75rem;
+	}
+
+	/* links responsive media querys */
+
+	#linksResponsive {
+		grid-column: 1 / 3;
+		display: block;
+		border-top: solid 1px #d9e3dc;
+		background-image: url(http://www.csszengarden.com/214/gridlines.png),
+			url(http://www.csszengarden.com/214/noise.png),
+			url(http://www.csszengarden.com/214/contours.png),
+			url(http://www.csszengarden.com/214/bamboo.png);
+		background-repeat: repeat, repeat, repeat, no-repeat;
+		background-size: auto, auto, auto, cover;
+		background-attachment: fixed, fixed, fixed, fixed;
+		background-color: rgba(138, 188, 159, 0.5);
+		background-position: 0% 0%;
+		border-top: solid 1px #a0b9ad;
+		border-bottom: solid 1px #a0b9ad;
+		overflow: hidden;
+	}
+
+	#linksResponsive > ul {
+		list-style: none;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		height: 100%;
+		margin-left: 0px;
+		padding-left: 0px;
+	}
+
+	#linkOne {
+		grid-column: 1 / span 1;
+	}
+
+	#linkTwo {
+		grid-column: 2 / span 1;
+	}
+
+	.linksListItem {
+		padding: 1em 20%;
+		font-size: 1.01rem;
+		border-bottom: solid 1px #a0b9ad;
+		border-top: none;
+		width: 100%;
+	}
+
+	#lastRLinkItem {
+		padding-bottom: 2em;
+		border-bottom: none;
+	}
+}
