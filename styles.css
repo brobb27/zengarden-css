@@ -22,10 +22,8 @@ body {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-column: 1 / 3;
-	background-image: url(http://www.csszengarden.com/214/gridlines.png),
-		url(http://www.csszengarden.com/214/noise.png),
-		url(http://www.csszengarden.com/214/contours.png),
-		url(./images/header-img.jpeg);
+	background-image: url(./images/gridlines.png), url(./images/noise.png),
+		url(./images/contours.png), url(./images/header-img.jpeg);
 	background-repeat: repeat, repeat, repeat, no-repeat;
 	background-size: auto, auto, auto, cover;
 	background-attachment: fixed, fixed, fixed, scroll;
@@ -42,10 +40,8 @@ body {
 	display: grid;
 	grid-template-columns: 2fr 1fr;
 	grid-column: 1 / 3;
-	background-image: url(http://www.csszengarden.com/214/gridlines.png),
-		url(http://www.csszengarden.com/214/noise.png),
-		url(http://www.csszengarden.com/214/contours.png),
-		url(http://www.csszengarden.com/214/bamboo.png);
+	background-image: url(./images/gridlines.png), url(./images/noise.png),
+		url(./images/contours.png), url(./images/bamboo.png);
 	background-repeat: repeat, repeat, repeat, no-repeat;
 	background-size: auto, auto, auto, cover;
 	background-attachment: fixed, fixed, fixed, fixed;
@@ -65,10 +61,8 @@ body {
 	grid-column: 1 / 3;
 	color: lightgrey;
 	height: 20.5rem;
-	background-image: url(http://www.csszengarden.com/214/gridlines.png),
-		url(http://www.csszengarden.com/214/noise.png),
-		url(http://www.csszengarden.com/214/contours.png),
-		url(http://www.csszengarden.com/214/koi.jpg);
+	background-image: url(./images/gridlines.png), url(./images/noise.png),
+		url(./images/contours.png), url(./images/koi.jpeg);
 	background-position: right;
 	background-size: auto, auto, auto, cover;
 	background-repeat: repeat, repeat, repeat, no-repeat;
@@ -603,10 +597,8 @@ body {
 		grid-column: 1 / 3;
 		display: block;
 		border-top: solid 1px #d9e3dc;
-		background-image: url(http://www.csszengarden.com/214/gridlines.png),
-			url(http://www.csszengarden.com/214/noise.png),
-			url(http://www.csszengarden.com/214/contours.png),
-			url(http://www.csszengarden.com/214/bamboo.png);
+		background-image: url(./images/gridlines.png), url(./images/noise.png),
+			url(./images/contours.png), url(./images/bamboo.png);
 		background-repeat: repeat, repeat, repeat, no-repeat;
 		background-size: auto, auto, auto, cover;
 		background-attachment: fixed, fixed, fixed, fixed;
