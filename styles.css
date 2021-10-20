@@ -25,7 +25,7 @@ body {
 	background-image: url(http://www.csszengarden.com/214/gridlines.png),
 		url(http://www.csszengarden.com/214/noise.png),
 		url(http://www.csszengarden.com/214/contours.png),
-		url(http://www.csszengarden.com/214/huntington.jpg);
+		url(./images/header-img.jpeg);
 	background-repeat: repeat, repeat, repeat, no-repeat;
 	background-size: auto, auto, auto, cover;
 	background-attachment: fixed, fixed, fixed, scroll;
